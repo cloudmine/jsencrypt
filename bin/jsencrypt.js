@@ -1,7 +1,7 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global.JSEncrypt = {})));
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+    typeof define === 'function' && define.amd ? define(['exports'], factory) :
+    (factory((global.JSEncrypt = {})));
 }(this, (function (exports) { 'use strict';
 
 var BI_RM = "0123456789abcdefghijklmnopqrstuvwxyz";
@@ -62,7 +62,8 @@ function cbit(x) {
     return r;
 }
 //#endregion BIT_OPERATIONS
-
+var window = {};
+var navigator = {};
 var b64map = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 var b64pad = "=";
 function hex2b64(h) {
